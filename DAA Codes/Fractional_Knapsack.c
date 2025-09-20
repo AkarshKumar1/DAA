@@ -1,5 +1,23 @@
 // Fractional Knapsack Program
 
+/* 
+    Algorithm 
+
+fractional_knapsack (w,v,W)
+    n =  length[w]
+    for i = 1 to n
+        do      x[i] = 0
+         i = 1
+         weight = 0
+         while (i <= n and weight < W)
+            do    if(weight [i] <= W)
+                  then    x[i] = 1
+                          weight = weight + w[i]
+                  else
+                          x[i] = (W - weight) / w
+                              weight = w
+    return x
+    */
 #include <stdio.h>
 
 int main() {
