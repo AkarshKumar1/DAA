@@ -1,5 +1,18 @@
 // Job Sequencing with Deadlines
 
+/* 
+Algorithm
+
+1.	Start
+2.	Arrange all the jobs in the descending or non-increasing order of their profits.
+3.	Compute the maximum deadline for all the jobs and set it as maximum slot in the machine.
+4.	For each job
+	We check deadline (d) <= maximum slot then only profit (P) will be added and also update max slot = max slot d.
+	Else that job will not be selected or skipped.
+5.	Print Total Profit and Job Sequence.
+6.	End 
+*/
+
 #include <stdio.h>
 
 int main() {
